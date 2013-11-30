@@ -1,8 +1,10 @@
-//ENSE 274 lab project
-//DCS Development : Chris Koback ,Sean Boczulak ,Dirk Schmitz 
-//
-//Project Name: AirX, Airport Expert
-//
+/**************************
+* Project: AirX
+* Members: Sean Boczulak, Christian Koback, Dirk Schmitz'
+* Purpose: Create an application that allows users to navigate airports with ease.
+* Class: ENSE 274
+* Date:30-11-13
+**************************/
 
 #include<iostream>		// communicating with the user
 #include<fstream>		// if we read in a file

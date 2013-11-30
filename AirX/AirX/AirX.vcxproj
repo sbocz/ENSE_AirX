@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{02F774D0-86D4-4CB0-BEA2-B966AF841AA1}</ProjectGuid>
+    <ProjectGuid>{0055058D-098C-4A9A-B5DE-62484D5D3252}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>A3_Date_Format</RootNamespace>
+    <RootNamespace>AirX</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -76,10 +76,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Date_Format.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="..\Months.txt" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
