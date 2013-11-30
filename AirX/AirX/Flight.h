@@ -20,7 +20,7 @@ public:
 
 	Flight();
 
-	Flight(long unsigned flightNumber, string destination, string airline, string specificInfo);
+	Flight(long unsigned flightNumber_in, string destination_in, string airline_in,string connections_in, string Time, string start_in );
 
 	// search for the destination and the airline in the FLIGHT CLASS and return
 	// true if flight meets criteria 
