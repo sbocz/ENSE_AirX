@@ -41,6 +41,6 @@ public:
 
 	//Alters the map to the users specifications
 	void AlterMap (char W, char S, char F, char G, char C, char X, char L, char E, char P);
-}
+};
 
 #endif
