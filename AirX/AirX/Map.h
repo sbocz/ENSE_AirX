@@ -18,15 +18,15 @@ private:
 	char floorTwo[MAX_ROW][MAX_COL];
 	
 	//Checks if nodes should be shown
-	bool Washrooms(char select);
-	bool Store(char select);
-	bool Food(char select);
-	bool Gate(char select);
-	bool Customs(char select);
-	bool CheckIn(char select);
-	bool Luggage(char select);
-	bool Entrance(char select);
-	bool PickUp(char select);
+	bool Washrooms(char select)const;
+	bool Store(char select)const;
+	bool Food(char select)const;
+	bool Gate(char select)const;
+	bool Customs(char select)const;
+	bool CheckIn(char select)const;
+	bool Luggage(char select)const;
+	bool Entrance(char select)const;
+	bool PickUp(char select)const;
 public:
 	//Default Constructor
 	Map();

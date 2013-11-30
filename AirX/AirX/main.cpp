@@ -1,5 +1,6 @@
 /**************************
 * Project: AirX
+* Version: 0.1
 * Members: Sean Boczulak, Christian Koback, Dirk Schmitz'
 * Purpose: Create an application that allows users to navigate airports with ease.
 * Class: ENSE 274

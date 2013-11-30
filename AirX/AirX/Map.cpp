@@ -1,7 +1,7 @@
 #include "Map.h"
 
 //Checks if nodes should be shown
-bool Map::Washrooms(char select)
+bool Map::Washrooms(char select)const
 {
 	if (select == 'y')
 		return true;
@@ -9,7 +9,7 @@ bool Map::Washrooms(char select)
 }
 
 //Checks if nodes should be shown
-bool Map::Store(char select)
+bool Map::Store(char select)const
 {
 	if (select == 'y')
 		return true;
@@ -17,7 +17,7 @@ bool Map::Store(char select)
 }
 
 //Checks if nodes should be shown
-bool Map::Food(char select)
+bool Map::Food(char select)const
 {
 	if (select == 'y')
 		return true;
@@ -25,7 +25,7 @@ bool Map::Food(char select)
 }
 
 //Checks if nodes should be shown
-bool Map::Gate(char select)
+bool Map::Gate(char select)const
 {
 	if (select == 'y')
 		return true;
@@ -33,7 +33,7 @@ bool Map::Gate(char select)
 }
 
 //Checks if nodes should be shown
-bool Map::Customs(char select)
+bool Map::Customs(char select)const
 {
 	if (select == 'y')
 		return true;
@@ -41,7 +41,7 @@ bool Map::Customs(char select)
 }
 
 //Checks if nodes should be shown
-bool Map::CheckIn(char select)
+bool Map::CheckIn(char select)const
 {
 	if (select == 'y')
 		return true;
@@ -49,7 +49,7 @@ bool Map::CheckIn(char select)
 }
 
 //Checks if nodes should be shown
-bool Map::Luggage(char select)
+bool Map::Luggage(char select)const
 {
 	if (select == 'y')
 		return true;
@@ -57,7 +57,7 @@ bool Map::Luggage(char select)
 }
 
 //Checks if nodes should be shown
-bool Map::Entrance(char select)
+bool Map::Entrance(char select)const
 {
 	if (select == 'y')
 		return true;
@@ -65,7 +65,7 @@ bool Map::Entrance(char select)
 }
 
 //Checks if nodes should be shown
-bool Map::PickUp(char select)
+bool Map::PickUp(char select)const
 {
 	if (select == 'y')
 		return true;
