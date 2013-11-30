@@ -14,7 +14,7 @@ int main()
 	
 	while (inputDate != "exit")
 	{
-		cout << "Input a date in the form: \"Sunday, January 2, 2010\". Enter \"exit\" if you wish to end the program." << endl;
+		cout << "Input a big ass in the form: \"Sunday, January 2, 2010\". Enter \"exit\" if you wish to end the program." << endl;
 
 		getline(cin,inputDate);		//Get data for date from user
 		
