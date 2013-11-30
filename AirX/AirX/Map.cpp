@@ -92,11 +92,14 @@ Map::Map(string F1, string F2)
 		{
 			for(unsigned j = 0; j < MAX_COL; j++)
 			{
-				floorFile1 >> floorOne[i][j];
-				floorFile2 >> floorTwo[i][j];
+				floorFile1.get() >> floorOne[i][j];
+				floorFile2.get() >> floorTwo[i][j];
 			}
 		}
 	}
+
+	floorFile1.close();
+	floorFile2.close();
 }
 
 //To display the floors as a "cout <<"
