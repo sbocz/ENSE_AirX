@@ -2,14 +2,14 @@
 
 Flight::Flight()
 {
-	flightNumber = 0000;
+	flightNumber = "0000";
 	destination = "";
 	airline = "";
 	connections = "";
 	time = "0:00";
 	start = "";
 }
-Flight::Flight(long unsigned flightNumber_in, string destination_in, string airline_in, string connections_in, string Time, string start_in)
+Flight::Flight(string flightNumber_in, string destination_in, string airline_in, string connections_in, string Time, string start_in)
 {
 	flightNumber = flightNumber_in;
 	destination = destination_in;
@@ -37,7 +37,7 @@ bool Flight::MeetsCriteria(string destinationIn, string airlineIn)const
 	}
 }
 
-void Flight::PrintFlightInfo()const
+void Flight::PrintFlightLong()const
 {
 	cout<< "The connecting flights are " << connections << endl; 
 	cout<<"You leave at :  "<<time <<endl;
@@ -45,4 +45,8 @@ void Flight::PrintFlightInfo()const
 	cout<< "You are going to:  "<< destination<<endl;
 	cout<<"You leave from:  "<<start<<endl;
 	cout<<"Your flight number is: "<<flightNumber<<endl;
+}
+void Flight::PrintFlightShort()const
+{
+	cout<<"Connecting flights: "<<connections<<"departure= "<<time<<"Airline is: "<<airline<<"Going to :"<<destination<<"Leaving from= "<<start<<"Flight number= "<<flightNumber<<endl<<endl;
 }

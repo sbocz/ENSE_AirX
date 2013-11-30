@@ -14,20 +14,21 @@ class Flight
 	string airline;
 	string destination;
 	string start;
-	long unsigned flightNumber;
+	string flightNumber;
 
 public:
 
 	Flight();
 
-	Flight(long unsigned flightNumber_in, string destination_in, string airline_in,string connections_in, string Time, string start_in );
+	Flight(string flightNumber_in, string destination_in, string airline_in,string connections_in, string Time, string start_in );
 
 	// search for the destination and the airline in the FLIGHT CLASS and return
 	// true if flight meets criteria 
 	bool MeetsCriteria(string destinationIn, string airlineIn)const;
 
 	// print flight
-	void PrintFlightInfo()const;
+	void PrintFlightLong()const;
+	void PrintFlightShort()const;
 };
 
 #endif
