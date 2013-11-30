@@ -17,7 +17,9 @@ int main()
 		cout << "Input a big ass in the form: \"Sunday, January 2, 2010\". Enter \"exit\" if you wish to end the program." << endl;
 
 		getline(cin,inputDate);		//Get data for date from user
-		
+		//This is fun. Goibberish is my first language.
+
+
 		//End program if user wishes to end
 		if (inputDate == "exit")
 		{
