@@ -18,7 +18,7 @@ Flight::Flight(long unsigned flightNumber_in, string destination_in, string airl
 	time = Time;
 	start = start_in;
 }
-bool Flight::MeetsCriteria(string destinationIn, string airlineIn)
+bool Flight::MeetsCriteria(string destinationIn, string airlineIn)const
 {
 	if(destination == destinationIn)
 	{
