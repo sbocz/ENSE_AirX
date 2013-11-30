@@ -7,15 +7,15 @@
 
 using namespace std;
 
-const unsigned MAX_COL = 53;
-const unsigned MAX_ROW = 14;
+const unsigned MAX_COL = 54;
+const unsigned MAX_ROW = 15;
 
 class Map
 {
 private:
 	//Array of map
-	char FloorOne[MAX_ROW][MAX_COL];
-	char FloorTwo[MAX_ROW][MAX_COL];
+	char floorOne[MAX_ROW][MAX_COL];
+	char floorTwo[MAX_ROW][MAX_COL];
 	
 	//Checks if nodes should be shown
 	bool Washrooms(char select);
