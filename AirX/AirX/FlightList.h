@@ -20,7 +20,7 @@ public:
 	FlightList(string FL);
 
 	//print all of the flights available
-	void PrintList()const;
+	void PrintList()const;	
 
 	//Print the flights with requested destinations and airlines
 	void PrintFiltered(string, string)const;
