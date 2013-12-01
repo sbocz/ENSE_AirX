@@ -22,6 +22,7 @@ public:
 
 	Flight(string flightNumber_in, string destination_in, string airline_in,string connections_in, string Time, string start_in );
 
+	Flight& operator= (const Flight& original);
 	// search for the destination and the airline in the FLIGHT CLASS and return
 	// true if flight meets criteria 
 	bool MeetsCriteria(string destinationIn, string airlineIn)const;

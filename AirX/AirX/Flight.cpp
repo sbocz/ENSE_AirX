@@ -18,6 +18,18 @@ Flight::Flight(string flightNumber_in, string destination_in, string airline_in,
 	time = Time;
 	start = start_in;
 }
+
+Flight& Flight::operator= (const Flight& original)
+{
+	flightNumber = original.flightNumber;
+	destination = original.destination;
+	airline = original.airline;
+	connections = original.connections;
+	time = original.time;
+	start = original.start;
+	return *this;
+}
+
 bool Flight::MeetsCriteria(string destinationIn, string airlineIn)const
 {
 	if(destination == destinationIn)
