@@ -1,6 +1,6 @@
 /*********************************************
 * Project:  AirX
-* Version:  v0.6
+* Version:  v0.7
 * Members:  Sean Boczulak, Christian Koback, 
 *			Dirk Schmitz
 * Purpose:  Create an application that 
@@ -53,6 +53,7 @@ int main()
 			if(choice == 'y')
 			{
 				cout << "Enter the flight number you would like to select: ";
+				cin.ignore(256, '\n');
 				getline(cin, flightSelect);
 				
 				if (flights.ValidFlight(flightSelect))
@@ -62,9 +63,9 @@ int main()
 			}
 			break;
 		case 's':		//search for certain flights
-			cout << "Enter the Airline you would like to use? (Enter \"x\" to view any airlines)\n";
+			cout << "Enter the Airline you would like to use? \n(Enter \"x\" to view any airlines)\n";
 			cin >> airlineFilter;
-			cout << "Enter the Destination you would like to reach? (Enter \"x\" to view all destinations)\n";
+			cout << "Enter the Destination you would like to reach? \n(Enter \"x\" to view all destinations)\n";
 			cin >> destinationFilter;
 			flights.PrintFiltered(destinationFilter, airlineFilter);
 
@@ -73,8 +74,8 @@ int main()
 			if(choice == 'y')
 			{
 				cout << "Enter the flight number you would like to select: ";
+				cin.ignore(256, '\n');
 				getline(cin, flightSelect);
-				
 				if (flights.ValidFlight(flightSelect))
 					userFlight = flights.FindFlight(flightSelect);
 				else
@@ -107,6 +108,7 @@ int main()
 			cout << "Would you like to see luggage pick-up(P)? (y/n)";
 			cin >> P;
 			airport.AlterMap(W, S, F, G, C, X, L, E, P);
+			airport.DisplayBothFloors();
 			break;
 		case 'q':		//quit application
 			running = false; 

@@ -54,10 +54,9 @@ void Flight::PrintFlightLong()const
 }
 void Flight::PrintFlightShort()const
 {
-	cout << "Flight Number   Airline    Destination     Start    Departure   Connections"<<endl;
-	cout << setw(13) << flightNumber << setw(10) << airline 
+	cout << setw(6) << flightNumber << setw(12) << airline 
 		 << setw(15) << destination << setw(10) << start 
-		 << setw(13) << time << setw(13) << connections << endl;
+		 << setw(13) << time << setw(14) << connections << endl;
 }
 
 bool Flight::Selected(string flightNum)const

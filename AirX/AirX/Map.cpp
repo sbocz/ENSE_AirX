@@ -140,46 +140,46 @@ void Map::AlterMap (char W, char S, char F, char G, char C, char X, char L, char
 {
 	if (Washrooms(W))
 	{
-		floorOne[3][3] = 'W'; floorOne[2][11] = 'W'; floorOne[13][45] = 'W'; floorOne[13][51] = 'W';
-		floorTwo[13][4] = 'W'; floorTwo[13][12] = 'W'; floorTwo[2][50] = 'W'; floorTwo[5][50] = 'W';
+		floorOne[3][3] = 'W'; floorOne[2][11] = 'W'; floorOne[13][45] = 'W'; floorOne[13][50] = 'W';
+		floorTwo[13][3] = 'W'; floorTwo[13][11] = 'W'; floorTwo[2][49] = 'W'; floorTwo[5][49] = 'W';
 	} else
 	{
-		floorOne[3][3] = ' '; floorOne[2][11] = ' '; floorOne[13][45] = ' '; floorOne[13][51] = ' ';
-		floorTwo[13][4] = ' '; floorTwo[13][12] = ' '; floorTwo[2][50] = ' '; floorTwo[5][50] = ' ';
+		floorOne[3][3] = ' '; floorOne[2][11] = ' '; floorOne[13][45] = ' '; floorOne[13][50] = ' ';
+		floorTwo[13][3] = ' '; floorTwo[13][11] = ' '; floorTwo[2][49] = ' '; floorTwo[5][49] = ' ';
 	}
 
 	if (Store(S))
 	{
 		floorOne[11][4] = 'S';
-		floorTwo[8][3] = 'S';
+		floorTwo[8][2] = 'S';
 	} else
 	{
 		floorOne[11][4] = ' ';
-		floorTwo[8][3] = ' ';
+		floorTwo[8][2] = ' ';
 	}
 
 	if (Food(F))
 	{
-		floorTwo[2][4] = 'F'; floorTwo[2][12] = 'F';
+		floorTwo[2][3] = 'F'; floorTwo[2][11] = 'F'; floorTwo[8][50] = ' ';
 	} else
 	{
-		floorTwo[2][4] = ' '; floorTwo[2][12] = ' ';
+		floorTwo[2][3] = ' '; floorTwo[2][11] = ' '; floorTwo[8][50] = ' ';
 	}
 
 	if (Gate(G))
 	{
-		floorTwo[1][27] = 'G'; floorTwo[1][40] = 'G';
+		floorTwo[1][26] = 'G'; floorTwo[1][39] = 'G'; floorTwo[13][50] = 'G';
 	} else
 	{
-		floorTwo[1][27] = ' '; floorTwo[1][40] = ' ';
+		floorTwo[1][26] = ' '; floorTwo[1][39] = ' '; floorTwo[13][50] = ' ';
 	}
 
 	if (Customs(C))
 	{
-		floorTwo[9][31] = 'C';
+		floorTwo[9][30] = 'C';
 	} else
 	{
-		floorTwo[9][31] = ' ';
+		floorTwo[9][30] = ' ';
 	}
 
 	if (CheckIn(X))
@@ -192,18 +192,18 @@ void Map::AlterMap (char W, char S, char F, char G, char C, char X, char L, char
 
 	if (Luggage(L))
 	{
-		floorOne[2][38] = 'L';
+		floorOne[2][48] = 'L';
 	} else
 	{
-		floorOne[2][38] = ' ';
+		floorOne[2][48] = ' ';
 	}
 
 	if (Entrance(E))
 	{
-		floorOne[10][52] = 'E';
+		floorOne[10][51] = 'E';
 	} else
 	{
-		floorOne[10][52] = ' ';
+		floorOne[10][51] = ' ';
 	}
 
 	if (PickUp(P))
@@ -211,6 +211,6 @@ void Map::AlterMap (char W, char S, char F, char G, char C, char X, char L, char
 		floorOne[11][28] = 'P'; floorOne[11][37] = 'P';
 	} else
 	{
-		floorOne[11][28] = ' '; floorTwo[11][37] = ' ';
+		floorOne[11][28] = ' '; floorOne[11][37] = ' ';
 	}
 }
