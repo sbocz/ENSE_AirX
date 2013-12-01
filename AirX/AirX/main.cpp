@@ -1,6 +1,6 @@
 /*********************************************
 * Project:  AirX
-* Version:  v0.5
+* Version:  v0.6
 * Members:  Sean Boczulak, Christian Koback, 
 *			Dirk Schmitz
 * Purpose:  Create an application that 
@@ -46,7 +46,7 @@ int main()
 		cin >> choice;
 		switch(choice)
 		{
-		case 'l': 
+		case 'l':		//list all flights
 			flights.PrintList(); 
 			cout << "Would you like to select a flight?(y/n)";
 			cin >> choice; 
@@ -58,10 +58,10 @@ int main()
 				if (flights.ValidFlight(flightSelect))
 					userFlight = flights.FindFlight(flightSelect);
 				else
-					cout << "Flight not found...";
+					cout << "Flight not found...\n";
 			}
 			break;
-		case 's': 
+		case 's':		//search for certain flights
 			cout << "Enter the Airline you would like to use? (Enter \"x\" to view any airlines)\n";
 			cin >> airlineFilter;
 			cout << "Enter the Destination you would like to reach? (Enter \"x\" to view all destinations)\n";
@@ -81,13 +81,13 @@ int main()
 					cout << "Flight not found...\n";
 			}
 			break;
-		case 'v':
+		case 'v':		//view user's flight info in depth
 			userFlight.PrintFlightLong();
 			break;
-		case 'm':
+		case 'm':		//display the airport map
 			airport.DisplayBothFloors();
 			break;
-		case 'a':
+		case 'a':		//alter the map based on what the user wants to see
 			cout << "Would you like to see washrooms(W)? (y/n)";
 			cin >> W;
 			cout << "Would you like to see stores(S)? (y/n)";
@@ -108,30 +108,13 @@ int main()
 			cin >> P;
 			airport.AlterMap(W, S, F, G, C, X, L, E, P);
 			break;
-		case 'q': 
+		case 'q':		//quit application
 			running = false; 
 			break;
-		default: 
+		default:		//bad input
 			cout << "Invalid input, please enter: l, s, v, m, a, or q\n"; 
 			break;
 		}
-		//ask the user for destination and airline
-		
-		// search for the destination and the airline in the FLIGHT CLASS and return
-		//all accessible flight information 
-			
-		// if no entered destination OR airline, ask the user for flight number 
-
-		// search for the flight number in the FLIGHT CLASS and return
-		//all accessible flight information
-
-		// get user's location (GPS or ask for the closest place to the user)
-		// show the map for the specific airport from MAP CLASS
-
-		// ask the user for place of interests
-	
-		// if so, show the map with the additional places of interests from MAP CLASS
-
 	}
 
 	return 0;
