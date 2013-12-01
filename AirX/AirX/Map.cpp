@@ -92,8 +92,8 @@ Map::Map(string F1, string F2)
 		{
 			for(unsigned j = 0; j < MAX_COL; j++)
 			{
-				floorFile1.get() >> floorOne[i][j];
-				floorFile2.get() >> floorTwo[i][j];
+				floorOne[i][j] = floorFile1.get();
+				floorTwo[i][j] = floorFile2.get();
 			}
 		}
 	}

@@ -1,6 +1,6 @@
 /**************************
 * Project: AirX
-* Version: 0.2
+* Version: 0.3
 * Members: Sean Boczulak, Christian Koback, Dirk Schmitz'
 * Purpose: Create an application that allows users to navigate airports with ease.
 * Class: ENSE 274
@@ -17,12 +17,14 @@
 
 using namespace std;
 
+
 int main()
 {
-//hello
-	cout << "Welcome to AirX\n";
+	Map airport("FloorOne.txt", "FloorTwo.txt");
+	FlightList flights("Flight.txt"); 
 
-	
+	cout << "Welcome to AirX\n";
+			
 	
 
 

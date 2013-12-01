@@ -7,7 +7,7 @@ FlightList::FlightList()
 FlightList::FlightList(string FL)
 {
 	ifstream FlightFile;
-	FlightFile.open("Flight.txt");
+	FlightFile.open(FL);
 	string num;
 	string dest;
 	string air;
