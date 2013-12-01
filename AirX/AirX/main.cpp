@@ -1,6 +1,6 @@
 /*********************************************
 * Project:  AirX
-* Version:  0.3
+* Version:  v0.4
 * Members:  Sean Boczulak, Christian Koback, 
 *			Dirk Schmitz
 * Purpose:  Create an application that 
