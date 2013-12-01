@@ -38,6 +38,7 @@ int main()
 	cout << "Welcome to AirX\n";
 	cout << "To begin, you must select a flight you wish to take.\n";
 	
+	//loops until user wishes to quit
 	while(running)
 	{
 		cout << "What would you like to do?\n";
