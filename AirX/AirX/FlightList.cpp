@@ -47,3 +47,22 @@ void FlightList::PrintFiltered(string destinationIn, string airlineIn)const
 		}
 	}
 }
+
+Flight FlightList::FindFlight(string flightNum)const
+{
+	for (int i = 0; i < FLIGHTS; i++)
+	{
+		if (List[i].Selected(flightNum))
+			return List[i];
+	}
+}
+
+bool FlightList::ValidFlight(string num)const
+{	
+	for (int i = 0; i < FLIGHTS; i++)
+	{
+		if (List[i].Selected(num))
+			return true;
+	}
+	return false;
+}

@@ -62,3 +62,10 @@ void Flight::PrintFlightShort()const
 {
 	cout<<"Connecting flights: "<<connections<<"departure= "<<time<<"Airline is: "<<airline<<"Going to :"<<destination<<"Leaving from= "<<start<<"Flight number= "<<flightNumber<<endl<<endl;
 }
+
+bool Flight::Selected(string flightNum)const
+{
+	if (flightNumber == flightNum)
+		return true;
+	return false;
+}
