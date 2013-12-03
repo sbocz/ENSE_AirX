@@ -20,7 +20,7 @@ public:
 	FlightList(string FL);
 
 	void PrintList()const;
-	void PrintFiltered()const;
+	void PrintFiltered(string, string)const;
 };
 
 #endif
