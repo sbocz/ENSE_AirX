@@ -112,6 +112,7 @@ int main()
 			airport.DisplayBothFloors();
 			break;
 		case 'q':		//quit application
+			cout<<"Thank you for travelling with AirX. Good bye" <<endl;
 			running = false; 
 			break;
 		default:		//bad input
