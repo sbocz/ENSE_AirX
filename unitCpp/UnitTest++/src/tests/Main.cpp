@@ -38,7 +38,7 @@ TEST(choice)
 				if (flights.ValidFlight(flightSelect))
 				{
 					userFlight = flights.FindFlight(flightSelect);
-					CHECK_EQUAL(flightSelect,5747);
+					CHECK_EQUAL(flightSelect,userFlight.getFlightNumber());
 				}
 				else
 				{
