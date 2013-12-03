@@ -1,14 +1,16 @@
 /*********************************************
 * Project:  AirX
-* Version:  v0.7
+* Version:  v1.0
 * Members:  Sean Boczulak, Christian Koback, 
 *			Dirk Schmitz
 * Purpose:  Create an application that 
 *			allows users to navigate 
 *			airports with ease.
 * Class:	ENSE 274
-* Date:		30-11-13
+* Date:		03-12-13
 **********************************************/
+
+//Working Version. Tests ran.
 
 #include<iostream>		// communicating with the user
 #include<fstream>		// if we read in a file
