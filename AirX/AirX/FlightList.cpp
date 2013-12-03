@@ -57,6 +57,7 @@ Flight FlightList::FindFlight(string flightNum)const
 		if (List[i].Selected(flightNum))
 			return List[i];
 	}
+	// this needs to return a dummy Flight just incase the one in the if statement is never found.
 }
 
 bool FlightList::ValidFlight(string num)const
