@@ -26,45 +26,42 @@ TEST(choice)
 	if(choice ='l')
 		{		//list all flights
 			flights.PrintList(); 
-			cout << "Would you like to select a flight?(y/n)";
+			cout << "testing..."<<endl;
 			cin >> choice; 
 			choice = 'y';
 			if(choice == 'y')
 			{
 
 				cout << "Enter the flight number you would like to select: ";
-				flightSelect = 5747;
+				flightSelect = "7423";
 				
 				if (flights.ValidFlight(flightSelect))
 				{
 					userFlight = flights.FindFlight(flightSelect);
-					CHECK_EQUAL(flightSelect,userFlight.getFlightNumber());
+					CHECK_EQUAL(userFlight.flightConn(flightSelect),"Winnipeg " ;
 				}
 				else
 				{
 					cout << "Flight not found...\n";
 				}
 			}
-			CHECK_EQUAL(choice,'y');
-			choice = 's';
+			choice = 's';		// continues onto the next test
 		}
 	else if( choice =='s')
 		{		//search for certain flights
 			string airlineFilter = "Westjet";
 			string destinationFilter = "Regina";
 			flights.PrintFiltered(destinationFilter, airlineFilter);
-			CHECK_EQUAL(destinationFilter,"Regina");
-			CHECK_EQUAL(airlineFilter,"Westjet");
 			
 			choice = 'y';
 			if(choice == 'y')
 			{
-				flightSelect = 5747;
+				flightSelect = "5747";
 				getline(cin, flightSelect);
 				if (flights.ValidFlight(flightSelect))
 				{
 					userFlight = flights.FindFlight(flightSelect);
-					CHECK_EQUAL(flightSelect,5747);
+					CHECK_EQUAL(userFlight.flightConn(flightSelect),"None" ;
 				}
 				else
 				{
